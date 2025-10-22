@@ -1,31 +1,65 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    // Speed at which the player moves and jumps
     public float playerSpeed = 0, jumpForce = 1;
 
+    // Rigidbody of the player.
     private Rigidbody rb;
+
+    // Variable to keep track of collected "PickUp" objects.
+    private int count;
+
+    // Movement along X and Y axes.
     private float movementX, movementY;
     private bool jumpEnabled;
 
+    // UI text component to display count of "PickUp" objects collected.
+    public TextMeshProUGUI countText;
+
+    // UI object to display winning text.
+    public GameObject winTextObject;
+
+    // Start is called before the first frame update.
     void Start()
     {
+        // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
+
+        // Initialize count to zero.
+        count = 0;
+
+        // Update the count display.
+        SetCountText();
+
+        // Initially set the win text to be inactive.
+        winTextObject.SetActive(false);
     }
 
+    // This function is called when a move input is detected.
     void OnMove(InputValue movementValue)
     {
-        Vector2 movementVector = movementValue.Get<Vector2>(); // Stores movement as a Vector2 variable
+        // Convert the input value into a Vector2 for movement.
+        Vector2 movementVector = movementValue.Get<Vector2>();
+
+        // Store the X and Y components of the movement.
         movementX = movementVector.x;
-        movementY = movementVector.y; // Assign both axes of movement as separate variables
+        movementY = movementVector.y;
     }
 
+    // jumping function
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            jumpEnabled = true; // Allows player to jump when touching ground
+            // Allows player to jump when touching ground
+            jumpEnabled = true;
         }
         
     }
@@ -34,26 +68,62 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            jumpEnabled = false; // Disables jumping after leaving ground
+            // Disables jumping after leaving ground
+            jumpEnabled = false;
         }
     }
 
     private void Update()
     {
-        if (jumpEnabled) // Checks if player can jump
+        // Checks if player can jump
+        if (jumpEnabled)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse); // Adds an instant force rather than gradual with Impulse
+                // Adds an instant force rather than gradual with Impulse
+                rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
             }
         }
 
     }
 
-    private void FixedUpdate() // Will call once per fixed frame rate frame
+    // Function to update the displayed count of "PickUp" objects collected.
+    void SetCountText()
     {
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY); // Take OnMove() info and make a Vector3 variable for it
+        // Update the count text with the current count.
+        countText.text = "Count: " + count.ToString();
+
+        // Check if the count has reached or exceeded the win condition.
+        if (count >= 4)
+        {
+            // Display the win text.
+            winTextObject.SetActive(true);
+        }
+    }
+
+    // FixedUpdate is called once per fixed frame-rate frame.
+    private void FixedUpdate() 
+    {
+        // Create a 3D movement vector using the X and Y inputs.
+        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+
+        // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * playerSpeed);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the object the player collided with has the "Collectible" tag.
+        if (other.gameObject.CompareTag("Collectible"))
+        {
+            // Deactivate the collided object (making it disappear).
+            other.gameObject.SetActive(false);
+
+            // Increment the count of "Collectible" objects collected.
+            count = count + 1;
+
+            // Update the count display.
+            SetCountText();
+        }
+    }
 }
