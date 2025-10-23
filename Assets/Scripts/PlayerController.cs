@@ -7,6 +7,9 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
+    // Animation controller
+    private Animator mAnimator;
+
     // Speed at which the player moves and jumps
     public float playerSpeed = 0, jumpForce = 1;
 
@@ -29,6 +32,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update.
     void Start()
     {
+        // animations controller
+        mAnimator = GetComponent<Animator>();
+
         // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
 
@@ -75,6 +81,32 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            mAnimator.SetTrigger("run");
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            mAnimator.SetTrigger("run");
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            mAnimator.SetTrigger("run");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            mAnimator.SetTrigger("jump");
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            mAnimator.SetTrigger("slide");
+        }
+
+
         // Checks if player can jump
         if (jumpEnabled)
         {
