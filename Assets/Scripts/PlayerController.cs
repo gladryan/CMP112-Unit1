@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,13 +23,18 @@ public class PlayerController : MonoBehaviour
 
     // Movement along X and Y axes.
     private float movementX, movementY;
-    private bool jumpEnabled;
+    // Timer value
+    private float currentTime;
+    private bool jumpEnabled, timerActive = true;
 
     // UI text component to display count of "PickUp" objects collected.
     public TextMeshProUGUI countText;
 
     // UI object to display winning text.
     public GameObject winTextObject;
+
+    // UI object to display timer
+    public TextMeshProUGUI timerText;
 
     // Start is called before the first frame update.
     void Start()
@@ -38,8 +45,8 @@ public class PlayerController : MonoBehaviour
         // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
 
-        // Initialize count to zero.
-        count = 0;
+        // Initialize count and time to zero.
+        count = 0; currentTime = 0;
 
         // Update the count display.
         SetCountText();
@@ -57,6 +64,12 @@ public class PlayerController : MonoBehaviour
         // Store the X and Y components of the movement.
         movementX = movementVector.x;
         movementY = movementVector.y;
+    }
+
+    // Controls what happens when player dies
+    void OnDeath()
+    {
+        SceneManager.LoadScene("Level1");
     }
 
     // jumping function
@@ -106,6 +119,17 @@ public class PlayerController : MonoBehaviour
             mAnimator.SetTrigger("slide");
         }
 
+        // Checks if timer is activated
+        if (timerActive)
+        {
+            // Sets timer value
+            currentTime = currentTime + Time.deltaTime;
+        }
+        // Store currentTime as variable that can be used as seconds, minutes, hours, ...
+        TimeSpan time = TimeSpan.FromSeconds(currentTime);
+        // Displays timer value neatly
+        timerText.text = "Time =  " + time.Minutes.ToString() + ":" + time.Seconds.ToString() + ":" + time.Milliseconds.ToString();
+
 
         // Checks if player can jump
         if (jumpEnabled)
@@ -117,6 +141,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // Check if player has fallen off
+        if (gameObject.transform.position.y < -10)
+        {
+            OnDeath();
+        }
+
     }
 
     // Function to update the displayed count of "PickUp" objects collected.
@@ -124,13 +154,6 @@ public class PlayerController : MonoBehaviour
     {
         // Update the count text with the current count.
         countText.text = "Deliciousness: " + count.ToString();
-
-        // Check if the count has reached or exceeded the win condition.
-        if (count >= 15)
-        {
-            // Display the win text.
-            winTextObject.SetActive(true);
-        }
     }
 
     // FixedUpdate is called once per fixed frame-rate frame.
@@ -156,6 +179,15 @@ public class PlayerController : MonoBehaviour
 
             // Update the count display.
             SetCountText();
+        }
+        
+        // Check if player collides with finish line
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            // Display win text
+            winTextObject.SetActive(true);
+            // Stop timer
+            timerActive = false;
         }
     }
 }
