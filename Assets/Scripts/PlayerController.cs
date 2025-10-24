@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             mAnimator.SetTrigger("jump");
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             mAnimator.SetTrigger("slide");
         }
@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         // Update the count text with the current count.
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Deliciousness: " + count.ToString();
 
         // Check if the count has reached or exceeded the win condition.
         if (count >= 15)
