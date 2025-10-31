@@ -3,20 +3,25 @@ using UnityEngine;
 public class StarterSceneStar : MonoBehaviour
 {
     [Header("Effects")]
-    public GameObject particleEffectPrefab; // Assign particle system prefab in Inspector
+    // Assign particle system prefab in Inspector
+    public GameObject particleEffectPrefab;
 
     [Header("Motion Settings")]
-    public float rotationSpeed = 0.01f; // Rotation speed in degrees per second
-    public float bobbingAmount = 0.01f; // Amplitude of bobbing motion
-    public float bobbingSpeed = 10f; // Speed of bobbing motion
+    // Rotation speed in degrees per second
+    public float rotationSpeed = 0.01f;
+    // Amplitude of bobbing motion
+    public float bobbingAmount = 0.01f;
+    // Speed of bobbing motion
+    public float bobbingSpeed = 10f;
 
     private Vector3 startPosition;
-    private float timer; 
+    private float timer;
 
     void Start()
     {
         // Remember the original position of the GameObject
         startPosition = transform.position;
+
     }
 
     void Update()

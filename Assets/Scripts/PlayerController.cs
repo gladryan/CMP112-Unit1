@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
             // Update the count display.
             SetCountText();
         }
-        
+
         // Check if player collides with finish line
         if (other.gameObject.CompareTag("Finish"))
         {
