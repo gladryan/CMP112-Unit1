@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
     // Animation controller
     private Animator mAnimator;
 
@@ -17,6 +18,9 @@ public class PlayerController : MonoBehaviour
 
     // Rigidbody of the player.
     private Rigidbody rb;
+    
+    // Player input
+    private PlayerInput input;
 
     // Variable to keep track of collected "PickUp" objects.
     private int count;
@@ -35,6 +39,15 @@ public class PlayerController : MonoBehaviour
 
     // UI object to display timer
     public TextMeshProUGUI timerText;
+    
+    // Coroutine to put power ups on a timer
+    IEnumerator PowerDelay()
+    {
+        // Wait 2 seconds before resetting power boosts
+        yield return new WaitForSeconds(1f);
+        playerSpeed -= 5;
+        jumpForce -= 5;
+    }
 
     // Start is called before the first frame update.
     void Start()
@@ -44,6 +57,9 @@ public class PlayerController : MonoBehaviour
 
         // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
+
+        // Get and store player input;
+        input = GetComponent<PlayerInput>();
 
         // Initialize count and time to zero.
         count = 0; currentTime = 0;
@@ -188,6 +204,20 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
             // Stop timer
             timerActive = false;
+            // Gets elvis to boogie
+            mAnimator.SetBool("dance", true);
+            // Prevents further input
+            input.DeactivateInput();
+        }
+
+        // Check if player collides with a star/power-up
+        if (other.gameObject.CompareTag("PowerUp"))
+        {
+            // Apply power up
+            playerSpeed += 5;
+            jumpForce += 5;
+            //Begin power up timer using coroutine
+            StartCoroutine(PowerDelay());
         }
     }
 }
