@@ -20,6 +20,7 @@ public class ItemPickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayPickupSound();
+
             // Add more code here to handle item pick-up
             Destroy(gameObject);
         }
