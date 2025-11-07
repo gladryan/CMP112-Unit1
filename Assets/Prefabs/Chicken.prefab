@@ -102,6 +102,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b8616f99c0757341a4f52e16cef85b6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8397258632903029358}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b8616f99c0757341a4f52e16cef85b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4880904734201340911}
   m_SourcePrefab: {fileID: 100100000, guid: 0b8616f99c0757341a4f52e16cef85b6, type: 3}
 --- !u!1 &2939221497286622188 stripped
 GameObject:
@@ -157,3 +160,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4880904734201340911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2939221497286622188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a7aae3f8d3e3c4b9d6b53dea0070fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  pickupSounds:
+  - {fileID: 8300000, guid: cd3dbb5b352f771418e44897c97c93f9, type: 3}
+  - {fileID: 8300000, guid: eae48a8b79c222c479f1acf74e6df76e, type: 3}
+  - {fileID: 8300000, guid: f73a5298d3607494da24abc1a4d801ea, type: 3}
+  - {fileID: 8300000, guid: d3fcabe768c0a314dbe84013cd2e39ae, type: 3}
+  - {fileID: 8300000, guid: 397d9173c084a2541b352c07c98569ae, type: 3}
+  - {fileID: 8300000, guid: f8a924f3ddabddb47b4e3079f3a0076c, type: 3}

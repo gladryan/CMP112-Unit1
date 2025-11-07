@@ -108,6 +108,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Animation triggers
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
@@ -141,8 +142,10 @@ public class PlayerController : MonoBehaviour
             // Sets timer value
             currentTime = currentTime + Time.deltaTime;
         }
+
         // Store currentTime as variable that can be used as seconds, minutes, hours, ...
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
+
         // Displays timer value neatly
         timerText.text = "Time =  " + time.Minutes.ToString() + ":" + time.Seconds.ToString() + ":" + time.Milliseconds.ToString();
 
@@ -216,6 +219,7 @@ public class PlayerController : MonoBehaviour
             // Apply power up
             playerSpeed += 5;
             jumpForce += 5;
+
             //Begin power up timer using coroutine
             StartCoroutine(PowerDelay());
         }

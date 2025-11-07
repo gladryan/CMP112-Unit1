@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29.96
+      value: 25.12
       objectReference: {fileID: 0}
     - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -310,6 +314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -437,6 +445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -564,7 +576,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 6a7562b0ac8b944158d1dd076785ca39, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -657,7 +669,7 @@ Transform:
   m_GameObject: {fileID: 55044163}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.88078, y: 0, z: 4.737503}
+  m_LocalPosition: {x: -14, y: 0, z: 95.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -962,6 +974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2231,6 +2247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2641,7 +2661,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1a1f66a2481cc4201b08ee51f23b9104, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3332,6 +3352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3785,7 +3809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.43
+      value: -5.37
       objectReference: {fileID: 0}
     - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3827,6 +3851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4471,79 +4499,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4a7619d90781f94a82a0f3504eb9004, type: 3}
   m_PrefabInstance: {fileID: 266801456}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &530720054
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1934439635}
-    m_Modifications:
-    - target: {fileID: 3720867298404714495, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_Name
-      value: Collectible_Star
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.64035
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 61.12503
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8060928419431146671, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 310676532}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
 --- !u!1 &541099233
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,6 +4950,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621434689}
   m_Mesh: {fileID: -2432090755550338912, guid: e4a7619d90781f94a82a0f3504eb9004, type: 3}
+--- !u!1001 &623502361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1934439635}
+    m_Modifications:
+    - target: {fileID: 1414845545966653098, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 310676532}
+    - target: {fileID: 2195361398966923288, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 63.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939221497286622188, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_Name
+      value: Chicken (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+--- !u!4 &623502362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+  m_PrefabInstance: {fileID: 623502361}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &632859377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5173,6 +5202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5365,6 +5398,7 @@ Transform:
   - {fileID: 55044165}
   - {fileID: 1452741824}
   - {fileID: 310676531}
+  - {fileID: 1483646419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &699450178
@@ -5691,6 +5725,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7306,6 +7344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7621,7 +7663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.81503
+      value: 16.59
       objectReference: {fileID: 0}
     - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8448,6 +8490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8580,7 +8626,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: b1404f52ff75b4c399ab3de4356de2ed, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8673,7 +8719,7 @@ Transform:
   m_GameObject: {fileID: 1101629333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.62904, y: 0, z: -91.9425}
+  m_LocalPosition: {x: -11.62904, y: 0, z: 19.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8920,6 +8966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9621,6 +9671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10233,6 +10287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10612,6 +10670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10699,6 +10761,80 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8330612687560278107, guid: 52978e634c533654eb48564870a874ff, type: 3}
   m_PrefabInstance: {fileID: 1373359090}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1404782770
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1934439635}
+    m_Modifications:
+    - target: {fileID: 1414845545966653098, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 310676532}
+    - target: {fileID: 2195361398966923288, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 34.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939221497286622188, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: m_Name
+      value: Chicken (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+--- !u!4 &1404782771 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2558579834003759446, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+  m_PrefabInstance: {fileID: 1404782770}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1420799160
 GameObject:
@@ -10862,7 +10998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.71035
+      value: -3.87
       objectReference: {fileID: 0}
     - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10870,7 +11006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 93.37503
+      value: 96.29
       objectReference: {fileID: 0}
     - target: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10969,6 +11105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11010,7 +11150,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: afebac5c8b8e94c279f64a8866219739, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11103,7 +11243,7 @@ Transform:
   m_GameObject: {fileID: 1452741822}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.62904, y: 0, z: 77.43751}
+  m_LocalPosition: {x: -11.62904, y: 0, z: 276.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11361,6 +11501,135 @@ Transform:
   - {fileID: 1017418938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1483646417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483646419}
+  - component: {fileID: 1483646418}
+  m_Layer: 0
+  m_Name: CrunchAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1483646418
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483646417}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1483646419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483646417}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -34.34813, y: 0, z: -6.0332947}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 697862306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1487847024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11421,6 +11690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11491,6 +11764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12222,11 +12499,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4a7619d90781f94a82a0f3504eb9004, type: 3}
   m_PrefabInstance: {fileID: 1599559631}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1602410537 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3926995519691008072, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
-  m_PrefabInstance: {fileID: 530720054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1614884629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12287,6 +12559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13114,6 +13390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13611,6 +13891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14172,6 +14456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14242,6 +14530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14282,7 +14574,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 27a36dc82ff32054d88d76929bcd1079, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.03
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14412,8 +14704,10 @@ Transform:
   m_Children:
   - {fileID: 1003582068}
   - {fileID: 3926862}
+  - {fileID: 1404782771}
   - {fileID: 1243830451}
   - {fileID: 18338125}
+  - {fileID: 623502362}
   - {fileID: 1775526084}
   - {fileID: 449455787}
   - {fileID: 1442402720}
@@ -14443,7 +14737,6 @@ Transform:
   - {fileID: 280670267}
   - {fileID: 1823135709}
   - {fileID: 1833936218}
-  - {fileID: 1602410537}
   - {fileID: 129564238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14626,6 +14919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15292,6 +15589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16110,6 +16411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken
       objectReference: {fileID: 0}
+    - target: {fileID: 4880904734201340911, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1483646418}
     - target: {fileID: 8397258632903029358, guid: 4e2d31faad659514ea020742d0e79bc2, type: 3}
       propertyPath: m_Size.x
       value: 0.08
